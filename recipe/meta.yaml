@@ -20,7 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - poetry
+    - poetry-core
   run:
     - python >=3.6
 
@@ -37,6 +37,7 @@ test:
 about:
   home: https://pypi.org/project/archspec/
   summary: A library to query system architecture
+  description: A library to query system architecture
   license: MIT OR Apache-2.0
   license_file:
     - LICENSE-MIT
