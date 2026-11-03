@@ -1,5 +1,5 @@
 {% set name = "archspec" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ea980955530499865225eff917b649b39fd014b53f8c6461b6348c1d8b866f1
+  sha256: 87bd0f5664e641333c8878352987a7e7fadd225252279ac9f37c0ca185de3147
 
 build:
   number: 0
@@ -19,9 +19,10 @@ requirements:
   host:
     - pip
     - python
-    - poetry-core >=1.0.0
+    - poetry-core
   run:
     - python
+    - python 3.6.15|,>=3.7.0,<4.0.0
 
 test:
   imports:
