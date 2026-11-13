@@ -1,5 +1,5 @@
 {% set name = "archspec" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2ea980955530499865225eff917b649b39fd014b53f8c6461b6348c1d8b866f1
+  sha256: 87bd0f5664e641333c8878352987a7e7fadd225252279ac9f37c0ca185de3147
 
 build:
   number: 0
@@ -38,6 +38,7 @@ about:
   summary: A library to query system architecture
   description: A library to query system architecture
   license: MIT OR Apache-2.0
+  license_family: Other
   license_file:
     - LICENSE-MIT
     - LICENSE-APACHE
