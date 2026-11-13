@@ -19,10 +19,9 @@ requirements:
   host:
     - pip
     - python
-    - poetry-core
+    - poetry-core >=1.0.0
   run:
     - python
-    - python 3.6.15|,>=3.7.0,<4.0.0
 
 test:
   imports:
@@ -39,6 +38,7 @@ about:
   summary: A library to query system architecture
   description: A library to query system architecture
   license: MIT OR Apache-2.0
+  license_family: Other
   license_file:
     - LICENSE-MIT
     - LICENSE-APACHE
